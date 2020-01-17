@@ -1,0 +1,11 @@
+body {
+  background-color: teal;
+}
+
+.theBody {
+  background-color: goldenrod;
+}
+
+#theBody {
+  background-color: greenyellow;
+}
