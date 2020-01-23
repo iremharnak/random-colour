@@ -37,9 +37,15 @@ console.log(`rgb(${colourRed}, ${colourGreen}, ${colourBlue})`);
     Round the resulting number down (aka, floor! Note: "ceil" will round up) to create options 0-255
 */
 
-
-
-
+let firstButton = document.querySelector('.button1');
+console.log(firstButton);
+firstButton.addEventListener ('click', event =>{
+    let colourRed =   Math.floor(Math.random() * 256);
+    let colourGreen = Math.floor(Math.random() * 256);
+    let colourBlue =  Math.floor(Math.random() * 256);
+    let bodyElement = document.querySelector('body');
+    bodyElement.style.backgroundColor = (`rgb(${colourRed}, ${colourGreen}, ${colourBlue})`);
+})
 // NEXT STEPS
 // - Determine the remaining macro steps, write them out!
 // - Once determined, break each step down into micro steps
